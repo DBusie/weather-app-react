@@ -7,7 +7,11 @@ function App() {
 
       <footer>
         This project was coded by Busi Shumba and is {""}
-        <a href="https://github.com/DBusie/weather-app-react" target="_blank">
+        <a
+          href="https://github.com/DBusie/weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
           open-sourced on Github
         </a>
       </footer>
