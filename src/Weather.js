@@ -23,14 +23,15 @@ export default function Weather() {
         <li>Wednesday 08:05</li>
         <li>Mostly sunny</li>
       </ul>
-      <div className="row">
-        <div className="col-sm-6">
+      <div className="row m-3">
+        <div className="col-sm-6 weather-description">
           <img
             src="https://th.bing.com/th/id/OIP.dUbvAZhroLoaA-UD3_l79gHaHa?pid=ImgDet&rs=1"
             alt="Mostly sunny"
-            className="img-fluid"
+            className="img-fluid weather-icon"
           />
-          28°C
+          <span className="temperature">28</span>
+          <span className="unit">°C</span>{" "}
         </div>
         <div className="col-sm-6">
           <ul>
