@@ -7,7 +7,7 @@ function App() {
       <div className="container">
         <Weather defaultCity="lisbon" />
         <footer>
-          This project was coded by Busi Shumba and is {""}
+          This website was coded by Busi Shumba and is {""}
           <a
             href="https://github.com/DBusie/weather-app-react"
             target="_blank"
