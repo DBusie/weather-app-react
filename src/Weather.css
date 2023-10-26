@@ -1,6 +1,6 @@
 .Weather {
   border: 1px solid #8ef4fc;
-  background: #f8f8f8;
+  background: #fcfcfc;
   padding: 20px;
 }
 .Weather h1 {
@@ -20,14 +20,15 @@
 }
 .Weather .weather-icon {
   margin-right: 10px;
-  width: 50px;
+  font-size: 60px;
+  padding: 0;
 }
 
 .Weather .temperature {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
-  line-height: 64px;
-  width: 64px;
+  line-height: 34px;
+  padding: 0;
 }
 .Weather .unit {
   font-size: 16px;
@@ -36,5 +37,5 @@
   top: -32px;
 }
 .Weather .weather-description {
-  height: 64px;
+  height: 10px;
 }
