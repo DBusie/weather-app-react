@@ -1,10 +1,11 @@
 import Weather from "./Weather";
+import Container from "react-bootstrap/Container";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <Container fluid="sm">
         <Weather defaultCity="lisbon" />
         <footer>
           This project was coded by Busi Shumba and is {""}
@@ -25,7 +26,7 @@ function App() {
             netlify
           </a>
         </footer>
-      </div>
+      </Container>
     </div>
   );
 }
