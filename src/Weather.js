@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import axios from "axios";
 import "./Weather.css";
@@ -11,6 +12,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coord: response.data.coordinates,
       date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
@@ -48,11 +50,12 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-sm-4">
-              <input type="submit" value="Search" className="btn btn-warning" />
+              <input type="submit" value="Search" className="btn btn-dark" />
             </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast coord={weatherData.coordinates} />
       </div>
     );
   } else {

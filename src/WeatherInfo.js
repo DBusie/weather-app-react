@@ -1,5 +1,4 @@
 import React from "react";
-import Badge from "react-bootstrap/Badge";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -10,9 +9,7 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1>
-        <Badge bg="dark">{props.data.city}</Badge>
-      </h1>
+      <h1>{props.data.city}</h1>
       <ul>
         <li>
           <FormattedDate date={props.data.date} />
@@ -22,6 +19,7 @@ export default function WeatherInfo(props) {
       <Row className="justify-content-sm-center">
         <Col className="weather-description">
           <div>
+            console.log(props.data);
             <img
               src={props.data.icon}
               alt={props.data.description}
