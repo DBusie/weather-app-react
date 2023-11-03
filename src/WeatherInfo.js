@@ -16,16 +16,19 @@ export default function WeatherInfo(props) {
         </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
-      <Row className="justify-content-sm-center">
+      <Row className="justify-content-center">
         <Col className="weather-description">
-          <div>
-            console.log(props.data);
-            <img
-              src={props.data.icon}
-              alt={props.data.description}
-              className="img-fluid weather-icon"
-            />
-            <WeatherTemperature celsius={props.data.temperature} />
+          <div className="row mt-3">
+            <div className="col-sm-2">
+              <img
+                src={props.data.icon}
+                alt={props.data.description}
+                className="img-fluid weather-icon"
+              />
+            </div>
+            <div className="col-sm-2">
+              <WeatherTemperature celsius={props.data.temperature} />
+            </div>
           </div>
         </Col>
         <Col>

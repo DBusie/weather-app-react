@@ -1,11 +1,15 @@
 import Weather from "./Weather";
-import Container from "react-bootstrap/Container";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Container fluid="sm">
+      <div
+        fluid="sm"
+        className="container"
+        style={{ backgroundImage: "url(/namibia.jpg)" }}
+      >
         <Weather defaultCity="lisbon" />
         <footer>
           This project was coded by Busi Shumba and is {""}
@@ -14,19 +18,19 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
-            open-sourced on Github
+            open-sourced
           </a>{" "}
-          and hosted on{" "}
+          on Github and hosted on{" "}
           <a
             href="https://voluble-bubblegum-59654e.netlify.app/"
             alt="netlify-link"
             target="_blank"
             rel="noreferrer"
           >
-            netlify
+            Netlify
           </a>
         </footer>
-      </Container>
+      </div>
     </div>
   );
 }
