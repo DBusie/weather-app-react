@@ -5,21 +5,24 @@
   --col-4: #ebf2fc;
   --col-5: #f2f6f2;
   --col-6: #cffefe;
+  --col-7: #e5a807;
+}
+
+.App {
+  max-width: 700px;
+  margin: 40px auto;
 }
 .App footer {
   color: var(--col-3);
-  font-size: 15px;
+  font-size: 11px;
   line-height: 18px;
   margin-top: 5px;
-  top: 548px;
-  left: 250px;
   text-align: center;
 }
 
 .App .container {
-  padding: 20px;
-  margin-top: 40px;
-  border: 8px ridge #ebf2fc;
+  padding-left: 5px;
+  border: 2px ridge var(--col-6);
   border-radius: 6px;
-  box-shadow: 2px 1px 20px #e5a807;
+  box-shadow: 2px 1px 20px var(--col-7);
 }

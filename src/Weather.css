@@ -3,7 +3,7 @@
   color: white;
 }
 .Weather h1 {
-  color: #e9e8e8;
+  color: var(--col-1);
   font-size: 28px;
   font-weight: 500;
   line-height: 29px;

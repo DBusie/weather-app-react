@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FidgetSpinner } from "react-loader-spinner";
 
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
@@ -72,6 +73,17 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return (
+      <FidgetSpinner
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="dna-loading"
+        wrapperStyle={{}}
+        wrapperClass="dna-wrapper"
+        ballColors={["var(--col-3)", "var(--col-7)", "var(--col-6)"]}
+        backgroundColor="var(--col-2)"
+      />
+    );
   }
 }
