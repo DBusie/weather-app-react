@@ -6,23 +6,33 @@
   --col-5: #f2f6f2;
   --col-6: #cffefe;
   --col-7: #e5a807;
+  --col-8: #e5d0bd;
+  --col-9: #be836a;
+  --col-10: #db9870;
+  --col-11: #8e4917;
+  --col-12: #9bc7f5;
+  --col-13: #4da4f3;
+  --col-14: #55adf9;
+  --col-15: #fcf3f3;
 }
 
 .App {
+  background: linear-gradient(
+    228deg,
+    rgb(252, 243, 243) 43%,
+    rgb(85, 173, 249) 92%
+  );
+  border: 2px ridge var(--col-6);
+  border-radius: 6px;
+  box-shadow: 2px 1px 20px var(--col-7);
   max-width: 700px;
   margin: 40px auto;
 }
+
 .App footer {
   color: var(--col-3);
   font-size: 11px;
   line-height: 18px;
   margin-top: 5px;
   text-align: center;
-}
-
-.App .container {
-  padding-left: 5px;
-  border: 2px ridge var(--col-6);
-  border-radius: 6px;
-  box-shadow: 2px 1px 20px var(--col-7);
 }

@@ -4,12 +4,8 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <div
-        fluid="sm"
-        className="container"
-        style={{ backgroundImage: "url(/namibia.jpg)" }}
-      >
+    <div className="App" style={{ backgroundImage: "url(/namibia.jpg)" }}>
+      <div fluid="sm" className="container">
         <Weather defaultCity="lisbon" />
         <footer>
           This project was coded by Busi Shumba and is {""}
