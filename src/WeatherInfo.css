@@ -1,3 +1,29 @@
 .WeatherInfo {
-  color: white;
+  color: var(--col-16);
+}
+.WeatherInfo h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 38px;
+  margin-top: 5px;
+  margin-left: 158px;
+}
+
+.WeatherInfo ul {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 19px;
+  font-weight: 400;
+}
+.WeatherInfo li {
+  list-style: none;
+}
+.WeatherInfo .weather-icon {
+  margin-right: 10px;
+  font-size: 90px;
+  padding: 0;
+}
+
+.WeatherInfo .weather-description {
+  height: 10px;
 }

@@ -19,14 +19,14 @@ export default function WeatherInfo(props) {
       <Row className="justify-content-center">
         <Col className="weather-description">
           <div className="row mt-3">
-            <div className="col-sm-2">
+            <div className="col-sm-3">
               <img
                 src={props.data.icon}
                 alt={props.data.description}
                 className="img-fluid weather-icon"
               />
             </div>
-            <div className="col-sm-2">
+            <div className="col-sm-3">
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
           </div>

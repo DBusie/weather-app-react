@@ -4,7 +4,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="App" style={{ backgroundImage: "url(/namibia.jpg)" }}>
+    <div className="App">
       <div fluid="sm" className="container">
         <Weather defaultCity="lisbon" />
         <footer>
@@ -13,6 +13,7 @@ export default function App() {
             href="https://github.com/DBusie/weather-app-react"
             target="_blank"
             rel="noreferrer"
+            className="footer-link"
           >
             open-sourced
           </a>{" "}
@@ -22,6 +23,7 @@ export default function App() {
             alt="netlify-link"
             target="_blank"
             rel="noreferrer"
+            className="footer-link"
           >
             Netlify
           </a>
