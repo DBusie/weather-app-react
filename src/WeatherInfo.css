@@ -6,7 +6,7 @@
   font-weight: 500;
   line-height: 38px;
   margin-top: 5px;
-  margin-left: 158px;
+  padding-left: 9px;
 }
 
 .WeatherInfo ul {
@@ -19,11 +19,8 @@
   list-style: none;
 }
 .WeatherInfo .weather-icon {
-  margin-right: 10px;
   font-size: 90px;
+  position: relative;
+  bottom: 25px;
   padding: 0;
-}
-
-.WeatherInfo .weather-description {
-  height: 10px;
 }

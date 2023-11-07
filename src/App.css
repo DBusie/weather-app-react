@@ -31,5 +31,5 @@
 }
 .App .footer-link {
   text-decoration: none;
-  color: #be836a;
+  color: var(--col-11);
 }

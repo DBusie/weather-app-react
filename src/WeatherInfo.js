@@ -9,29 +9,38 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1>{props.data.city}</h1>
-      <ul>
-        <li>
-          <FormattedDate date={props.data.date} />
-        </li>
-        <li className="text-capitalize">{props.data.description}</li>
-      </ul>
+      <Row>
+        <Col>
+          <h1>{props.data.city}</h1>
+          <ul>
+            <li className="text-capitalize">{props.data.description}</li>
+          </ul>
+        </Col>
+        <Col>
+          <ul>
+            <li>
+              <FormattedDate date={props.data.date} />
+            </li>
+          </ul>
+        </Col>
+      </Row>
+
       <Row className="justify-content-center">
-        <Col className="weather-description">
+        <Col className="weather-description col-sm-6">
           <div className="row mt-3">
-            <div className="col-sm-3">
+            <div className="col-sm-4">
               <img
                 src={props.data.icon}
                 alt={props.data.description}
                 className="img-fluid weather-icon"
               />
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-6">
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
           </div>
         </Col>
-        <Col>
+        <Col className="col-sm-6">
           <ul>
             <li>
               Humidity:
