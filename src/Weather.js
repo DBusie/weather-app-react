@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FidgetSpinner } from "react-loader-spinner";
 
 import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 import axios from "axios";
 import "./Weather.css";
@@ -13,7 +13,8 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coord: response.data.coordinates,
+      lat: response.data.coordinates.latitude,
+      lon: response.data.coordinates.longitude,
       date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
@@ -66,7 +67,7 @@ export default function Weather(props) {
 
         <div className="row">
           <div className="col">
-            <WeatherForecast />
+            <WeatherForecastDay />
           </div>
         </div>
       </div>

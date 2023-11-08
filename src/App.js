@@ -8,7 +8,16 @@ export default function App() {
       <div fluid="sm" className="container">
         <Weather defaultCity="lisbon" />
         <footer>
-          This project was coded by Busi Shumba and is {""}
+          This project was coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/busi-doreen-b2a17a38"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-link"
+          >
+            Busi Shumba
+          </a>{" "}
+          and is {""}
           <a
             href="https://github.com/DBusie/weather-app-react"
             target="_blank"
