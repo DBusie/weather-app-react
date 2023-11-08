@@ -67,7 +67,7 @@ export default function Weather(props) {
 
         <div className="row">
           <div className="col">
-            <WeatherForecastDay />
+            <WeatherForecastDay lat={weatherData.lat} lon={weatherData.lon} />
           </div>
         </div>
       </div>

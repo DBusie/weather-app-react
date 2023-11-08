@@ -16,17 +16,20 @@ export default function WeatherForecastDay(props) {
       <div className="WeatherForecastDay">
         <div className="row">
           <div className="col">
-            <div className="forecastDay">
-                           {forecast[0].(new Date(time * 1000))}
+            <div className="forecastDay">{forecast[0].time}</div>
+            <div className="forecastIcon">
+              <img
+                src={forecast[0].condition.icon_url}
+                alt={forecast[0].condition.description}
+              />
             </div>
-            <div className="forecastIcon">{forecast[0].condtion.icon_url}</div>
             <div className="forecastTemperature">
               <span className="maxTemperature">
-                {forecast[0].temperature.maximum}°
+                {Math.round(forecast[0].temperature.maximum)}°
               </span>
-              {''}
+              {""}
               <span className="minTemperature">
-                {forecast[0].temperature.minimum}°
+                {Math.round(forecast[0].temperature.minimum)}°
               </span>
             </div>
           </div>
@@ -35,11 +38,10 @@ export default function WeatherForecastDay(props) {
     );
   } else {
     const apiKey = "10b71242bt5ccb0ob65af52af58a3f2c";
-    const latitude = "props.lat";
-    const longitude = "props.lon";
-    const apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}`;
+    const latitude = props.lat;
+    const longitude = props.lon;
+    const apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-    console.log(apiUrl);
     return null;
   }
 }
