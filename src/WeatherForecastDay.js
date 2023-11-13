@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import axios from "axios";
 import "./WeatherForecastDay.css";
+import WeatherDay from "./WeatherDay";
 
 export default function WeatherForecastDay(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.lat, props.lon]);
+
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
@@ -15,24 +21,21 @@ export default function WeatherForecastDay(props) {
     return (
       <div className="WeatherForecastDay">
         <div className="row">
-          <div className="col">
-            <div className="forecastDay">{forecast[0].time}</div>
-            <div className="forecastIcon">
-              <img
-                src={forecast[0].condition.icon_url}
-                alt={forecast[0].condition.description}
-              />
-            </div>
-            <div className="forecastTemperature">
-              <span className="maxTemperature">
-                {Math.round(forecast[0].temperature.maximum)}°
-              </span>
-              {""}
-              <span className="minTemperature">
-                {Math.round(forecast[0].temperature.minimum)}°
-              </span>
-            </div>
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <div className="col daily-forecast" key={index}>
+                  <WeatherDay
+                    icon={dailyForecast.condition.icon_url}
+                    desc={dailyForecast.condition.description}
+                    maxTemp={dailyForecast.temperature.maximum}
+                    minTemp={dailyForecast.temperature.minimum}
+                    daytime={dailyForecast.time}
+                  />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );

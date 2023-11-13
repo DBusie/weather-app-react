@@ -25,10 +25,10 @@ export default function WeatherInfo(props) {
         </Col>
       </Row>
 
-      <Row className="justify-content-center">
+      <Row className="justify-content-center mt-3">
         <Col className="weather-description col-sm-6">
-          <div className="row mt-3">
-            <div className="col-sm-4">
+          <div className="row">
+            <div className="col-sm-4 justify-content-center icon-current">
               <img
                 src={props.data.icon}
                 alt={props.data.description}

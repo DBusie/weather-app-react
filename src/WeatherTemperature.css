@@ -15,3 +15,6 @@
   position: relative;
   top: -25px;
 }
+.WeatherTemperature .minTemperature {
+  opacity: 0.3;
+}
