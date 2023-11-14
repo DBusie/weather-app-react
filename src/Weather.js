@@ -82,7 +82,7 @@ export default function Weather(props) {
         ariaLabel="dna-loading"
         wrapperStyle={{}}
         wrapperClass="dna-wrapper"
-        ballColors={["var(--col-3)", "var(--col-7)", "var(--col-6)"]}
+        ballColors={["var(--col-1)", "var(--col-4)", "var(--col-3)"]}
         backgroundColor="var(--col-2)"
       />
     );

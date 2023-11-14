@@ -1,20 +1,9 @@
 :root {
-  --col-1: #f3f3f3;
-  --col-2: #fdeeee;
-  --col-3: #b4b4b4;
-  --col-4: #ebf2fc;
-  --col-5: #f2f6f2;
-  --col-6: #cffefe;
-  --col-7: #e5a807;
-  --col-8: #e5d0bd;
-  --col-9: #be836a;
-  --col-10: #db9870;
-  --col-11: #8e4917;
-  --col-12: #9bc7f5;
-  --col-13: #4da4f3;
-  --col-14: #55adf9;
-  --col-15: #fcf3f3;
-  --col-16: #1369e0;
+  --col-1: #b8b8fc;
+  --col-2: #eddd54;
+  --col-3: #b19807;
+  --col-4: #fff3bf;
+  --col-5: #04acfa;
 }
 
 .App {
@@ -23,13 +12,12 @@
 }
 
 .App footer {
-  color: var(--col-15);
+  color: var(--col-5);
   font-size: 12px;
   line-height: 18px;
-  margin-top: 5px;
   text-align: center;
 }
 .App .footer-link {
   text-decoration: none;
-  color: var(--col-11);
+  color: var(--col-1);
 }

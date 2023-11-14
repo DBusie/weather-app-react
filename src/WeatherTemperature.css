@@ -1,6 +1,6 @@
 .WeatherTemperature .unit-link {
   text-decoration: none;
-  color: var(--col-9);
+  color: var(--col-3);
 }
 
 .WeatherTemperature .temperature {
@@ -14,7 +14,4 @@
   font-weight: 400;
   position: relative;
   top: -25px;
-}
-.WeatherTemperature .minTemperature {
-  opacity: 0.3;
 }

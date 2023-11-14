@@ -7,10 +7,11 @@
   margin-left: 7px;
 }
 .WeatherForecastDay .daily-forecast {
-  border: 1px solid var(--col-9);
+  border: 1px solid var(--col-2);
   border-radius: 7px;
   margin-left: 7px;
   max-height: 180px;
   max-width: 100px;
   text-align: center;
+  color: var(--col-3);
 }

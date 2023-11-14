@@ -1,14 +1,15 @@
 .Weather {
   padding: 15px;
   margin: 10px;
-  background: #fcf1e8;
-  border: 2px ridge var(--col-6);
+  background: var(--col-4);
+  border: 2px ridge var(--col-3);
   border-radius: 6px;
-  box-shadow: 1px 10px 20px var(--col-12);
+  box-shadow: 3px 5px 30px var(--col-4);
 }
 
 .Weather .btn {
-  background: var(--col-16);
-  color: var(--col-15);
+  background: var(--col-2);
+  color: var(--col-3);
   font-weight: 500;
+  border: 1px solid var(--col-3);
 }
